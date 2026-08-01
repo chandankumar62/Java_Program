@@ -12,5 +12,6 @@ public class Function_Method{
     System.out.print("Enter your number: ");
     int number = input.nextInt();
     return number;
+    
   }
 }
