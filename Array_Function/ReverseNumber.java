@@ -1,20 +1,21 @@
 import java.util.Scanner;
 
-public class sum_of_digits {
+public class ReverseNumber {
   public static void main(String[] args) {
     Scanner input = new Scanner(System.in);
     System.out.print("Enter your number: ");
     int num = input.nextInt();
-    int sum = SumDigits(num);
-    System.out.println("Sum of digits: " + sum);
+    int reverse = reverse(num);
+    System.out.println("Sum of digits: " + reverse);
     input.close();
   }
-  public static int SumDigits(int num) {
-    int sum = 0;
+  public static int reverse(int num) {
+    int newNum = 0;
     while(num > 0){
-      sum += num % 10;
+      int digit = num % 10;
+      newNum = newNum * 10 + digit;
       num /= 10;
     }
-    return sum;
+    return newNum;
   }
 }

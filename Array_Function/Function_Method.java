@@ -11,7 +11,7 @@ public class Function_Method{
     Scanner input = new Scanner(System.in);
     System.out.print("Enter your number: ");
     int number = input.nextInt();
+    input.close();
     return number;
-    
   }
 }

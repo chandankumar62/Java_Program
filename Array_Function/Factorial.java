@@ -8,6 +8,7 @@ public class Factorial {
     long fact = factorial(num);
     System.out.println("Factorial is: " + fact
     );
+    input.close();
   }
   public static long factorial(int num) {
     if(num < 2){
