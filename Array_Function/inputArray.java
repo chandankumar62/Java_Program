@@ -14,4 +14,24 @@ public class inputArray{
     }
     return arr;
   }
+  public static int[][] input2DArray(){
+    Scanner input = new Scanner(System.in);
+    System.out.print("Enter the number of rows: ");
+    int rows = input.nextInt();
+    System.out.print("Enter the number of colum: ");
+    int colum = input.nextInt();
+    int[] [] arr = new int[rows][colum];
+    int index = 0;
+    while(index < rows){
+      int j = 0;
+      while(j < colum){
+        System.out.print("Please enter your element rows " + (index + 1) + ", column: "+ (j+1) + " : ");
+        arr[index][j] = input.nextInt();
+        j++;
+      }
+      
+      index++;
+    }
+    return arr;
+  }
 }
