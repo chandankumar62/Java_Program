@@ -9,6 +9,7 @@ public class Calculator {
     int num2  = input.nextInt();
     System.out.print("Now , enter your operator: ");
     String operator = input.next();
+    input.close();
     int result = switch(operator){
       case "+" -> num1 + num2;
       case "-" -> num1 - num2;
