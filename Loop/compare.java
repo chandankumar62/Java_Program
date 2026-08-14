@@ -10,6 +10,7 @@ public class compare {
         break;
       }
     }
-    System.out.println("Your command is equal");
+    System.out.println("Your successfully exit");
+    input.close();
   }
 }

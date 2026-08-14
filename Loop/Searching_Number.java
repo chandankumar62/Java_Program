@@ -16,6 +16,7 @@ public class Searching_Number {
     int element = input.nextInt();
     int occ = countOccurencess(arr, element);
     System.out.println("Your number is present "+ occ + " times");
+    input.close();
   }
   public static int countOccurencess(int[] nums , int element){
     int occ = 0;
