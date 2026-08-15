@@ -6,6 +6,7 @@ public class palindromeRecursion {
     System.out.print("Enter your umber : ");
     String num = input.next();
     System.out.println("Your number is " + (isPalindrome(num) ? "pallindrome" : "Not pallindrome"));
+    input.close();
   }
   public static boolean isPalindrome(String str){
     if(str.length() <=1){
