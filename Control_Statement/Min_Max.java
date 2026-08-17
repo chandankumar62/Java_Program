@@ -12,7 +12,6 @@ public class Min_Max {
     System.out.println("minimum number is : " + min);
     int max = ternary.max(num1, num2);
     System.out.println("maximum number is : " + max);
-    input.close();
   }
   public int min(int num1, int num2){
     
